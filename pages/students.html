@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAVICON LINK -->
+    <link rel="icon" href="../assets/images/svg/favicon.png">
+
+    <!-- BOXICONS LINK -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- STYLE CSS LINK -->
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Students</title>
+</head>
+
+<body>
+    <!-- MAIN SECTION STARTED -->
+    <main>
+        <section id="section-1">
+            <div class="flex items-start min-h-screen">
+                <!-- ASIDE SECTION STARTED -->
+                <div class="aside w-[270px] h-screen bg-orange-100 pt-[18px] pb-[33px] px-[38px] overflow-auto">
+                    <a href="#"><img class="relative cursor-pointer mb-[71px] right-[13px]"
+                            src="../assets/images/svg/logo.svg" alt="logo"></a>
+
+                    <div class="flex items-center flex-col gap-[5px]">
+                        <img class="rounded-[50%] cursor-pointer w-[140px]" src="../assets/images/png/mirjon2.png"
+                            alt="image">
+
+                        <h3 class="text-[17px] cursor-pointer mt-[10px] font-[700]">Karthi Madesh</h3>
+
+                        <h4 class="text-[14px] cursor-pointer font-[400] text-[#FEAF00] mb-[43px]">Admin</h4>
+
+                        <button
+                            class="flex rounded-[4px] text-[14px] font-[500] items-center gap-[15px] pl-[40px] bg-[#FEAF00] transition-all hover:bg-[#feae00ce] active:bg-[#FEAF00] pt-[15px] pb-[14px] pr-[53px]"><i
+                                class='bx text-[20px] bxs-graduation'></i>Students</button>
+
+                        <div class="flex logoutBtn cursor-pointer mt-[454px] items-center gap-[23px]">
+                            <h3 class="text-[14px] font-[500]">Logout</h3>
+                            <img src="../assets/images/svg/left.svg" alt="left">
+                        </div>
+                    </div>
+                </div>
+                <!-- ASIDE SECTION ENDED -->
+
+                <!-- HEADER SECTION STARTED -->
+                <div class="flex-1">
+                    <div class="bg-orange-100 flex items-center justify-between w-full px-[30px] py-[11px]">
+                        <img class="cursor-pointer" src="../assets/images/svg/navigate.svg" alt="navigate">
+
+                        <div class="flex items-center gap-[27px]">
+                            <div
+                                class="flex w-[245px] bg-[#fff] pl-[13px] pr-[12px] pt-[9px] pb-[11px] rounded-[8px] items-center gap-[27px]">
+                                <input type="text" class="outline-none" placeholder="Search...">
+                                <img class="cursor-pointer" src="../assets/images/svg/search.svg" alt="search">
+                            </div>
+
+                            <img class="mr-[21px] cursor-pointer" src="../assets/images/svg/bell.svg" alt="bell">
+                        </div>
+                    </div>
+
+                    <!-- CONTENT SECTION STARTED -->
+                    <div class="bg-slate-50 h-screen">
+                        <div class="container-2">
+                            <div class="flex border-b-[#E5E5E5] items-center border-b-[1px] py-[12px] justify-between">
+                                <h2 class="text-[22px] font-[700]">Students List</h2>
+
+                                <div class="flex items-center gap-[25px]">
+                                    <img class="cursor-pointer" src="../assets/images/svg/vector-little.svg"
+                                        alt="vector">
+                                    <button id="openModalBtn"
+                                        class="text-[14px] font-[500] text-[#fff] py-[13px] px-[26px] bg-[#FEAF00] transition-all hover:bg-[#feae00ce] active:bg-[#FEAF00]  rounded-[4px]">ADD
+                                        NEW
+                                        STUDENT</button>
+                                </div>
+                            </div>
+
+                            <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                    <i class='bx text-[24px] cursor-pointer relative left-[225px] bottom-[10px] bx-x-circle'></i>
+                                    <form id="formStudent" class="flex flex-col gap-[10px]">
+                                        <input class="outline-none my-2 form-control border-[1px] border-[#0000004b] py-2 px-2 rounded-[4px]" required type="text" name="name" placeholder="Name">
+                                        <input class="outline-none my-2 form-control border-[1px] border-[#0000004b] py-2 px-2 rounded-[4px]"  required type="email" name="email" placeholder="Email">
+                                        <input class="outline-none my-2 form-control border-[1px] border-[#0000004b] py-2 px-2 rounded-[4px]"  required type="number" name="phone_number" placeholder="Phone number">
+                                        <input class="outline-none my-2 form-control border-[1px] border-[#0000004b] py-2 px-2 rounded-[4px]"  required type="number" name=""enroll_number placeholder="Enroll number">
+                                        <input class="outline-none my-2 form-control border-[1px] border-[#0000004b] py-2 px-2 rounded-[4px]"  required type="date" name=""date_admission placeholder="Date addmission">
+
+                                        <input type="text" class="outline-none my-2 form-control border-[1px] border-[#0000004b] py-2 px-2 rounded-[4px]" required name="image" placeholder="Image">
+
+                                        <button type="submit" class="mt-[20px] w-full bg-green-500 hover:bg-green-400 transition-all active:bg-green-500 text-[#Fff] py-2 px-2 rounded-[4px]">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="students-table">
+                                <div class="flex items-center gap-[84px] py-[22px]">
+                                    <h4 class="text-[12px] ml-[109px] font-[600] text-[#ACACAC]">Name</h4>
+                                    <h4 class="text-[12px] ml-[37px] font-[600] text-[#ACACAC]">Email</h4>
+                                    <h4 class="text-[12px] ml-[71px] font-[600] text-[#ACACAC]">Phone</h4>
+                                    <h4 class="text-[12px] font-[600] text-[#ACACAC]">Enroll number</h4>
+                                    <h4 class="text-[12px]  ml-[41px] font-[600] text-[#ACACAC]">Date admission</h4>
+                                </div>
+
+                                <div class="flex Wrapper flex-col gap-[10px]">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CONTENT SECTION ENDED -->
+                </div>
+                <!-- HEADER SECTION ENDED -->
+            </div>
+        </section>
+    </main>
+    <!-- MAIN SECTION ENDED -->
+</body>
+<!-- TAILWINDCSS LINK -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- MY JS LINK -->
+<script src="../js/students.js"></script>
+
+</html>
