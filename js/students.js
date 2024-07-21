@@ -8,7 +8,7 @@ let currentCardElement = null;
 
 logout.addEventListener("click", () => {
     localStorage.removeItem("access_token");
-    window.location.href = "./sign-in.html";
+    window.location.href = "../index.html";
 });
 
 // MODAL ACTION STARTED

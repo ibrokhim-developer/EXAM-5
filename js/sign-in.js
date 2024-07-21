@@ -6,12 +6,12 @@ loginForm.addEventListener("submit",(e)=>{
 
     if(e.target[0].value === "admin" && e.target[1].value === "123"){
         localStorage.setItem("access_token",e.target[0].value)
-        window.location.href="./students.html"
+        window.location.href="../pages/students.html"
     }else{
-        window.location.href="./sign-up.html"
+        window.location.href="../pages/sign-up.html"
     }
 })
 
 signUp.addEventListener("click",()=>{
-    window.location.href="./sign-up.html"
+    window.location.href="../pages/sign-up.html"
 })
